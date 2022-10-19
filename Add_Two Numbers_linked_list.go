@@ -1,4 +1,4 @@
-// Time Complexity O(n) and space Complexity O(n)
+// Time Complexity O(m*n) and space Complexity O(m+n)
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
