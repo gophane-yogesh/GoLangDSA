@@ -4,7 +4,7 @@ func getHint(secret string, guess string) string {
 	gcount:=0
 	shash := make(map[uint8]int)
 	ghash := make(map[uint8]int)
-	result :=""
+	//result :=""
 
 	for i:=0; i<len(secret); i++{ // as both strings are same length
 		if secret[i] == guess[i]{
@@ -27,8 +27,8 @@ func getHint(secret string, guess string) string {
 
 
 	}
-	result = strconv.Itoa(bcount)+"A" + strconv.Itoa(gcount)+"B"
-	return result
+// 	result = strconv.Itoa(bcount)+"A" + strconv.Itoa(gcount)+"B"
+	 return fmt.Sprintf("%dA%dB",bcount,gcount)
 	
 
 
